@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -48,7 +49,7 @@ public class SceneLoaderManager : MonoBehaviour
     // will be called from a listener
     public void OnLoadingScreenToggled(bool enabled)
     {
-        if (enabled && pendingRequest != null) 
+        if (enabled && pendingRequest != null)
         {
             //When the loading screen is shown, this event will start a coroutine to load the new level
             StartCoroutine(ProcessLevelLoading(pendingRequest));
@@ -60,7 +61,7 @@ public class SceneLoaderManager : MonoBehaviour
         Scene loadedScene = SceneManager.GetSceneByName(scene.name);
         if (loadedScene != null && loadedScene.isLoaded)
             return true;
-        else 
+        else
             return false;
     }
 
@@ -71,6 +72,33 @@ public class SceneLoaderManager : MonoBehaviour
             var currentLoadedLevel = SceneManager.GetActiveScene();
             SceneManager.UnloadSceneAsync(currentLoadedLevel);
 
+            AsyncOperation loadSceneProcess = SceneManager.LoadSceneAsync(request.scene.name, LoadSceneMode.Additive);
+
+            // Level is being loaded
+            while (!loadSceneProcess.isDone)
+            {
+                yield return null;
+            }
+
+            // Activate once it is ready
+            ActivateLevel(request);
+
         }
+    }
+
+    private void ActivateLevel(LoadSceneRequest request)
+    {
+        //Set Active Level
+        Scene loadedLevel = SceneManager.GetSceneByName(request.scene.name);
+        SceneManager.SetActiveScene(loadedLevel);
+
+        //Hide loading screen
+        if (request.loadingScreen)
+        {
+            LoadingScreenUI.ToggleScreen(false);
+        }
+
+        // Clear request
+        pendingRequest = null;
     }
 }

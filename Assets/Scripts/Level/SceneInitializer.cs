@@ -28,7 +28,7 @@ public class SceneInitializer : MonoBehaviour
             {
                 // Loads a scene without closing the current one(additive form).
                 AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneToLoad.name, LoadSceneMode.Additive);
-                while (loadOperation.isDone == false)
+                while (!loadOperation.isDone)
                 {
                     yield return null;
                 }
