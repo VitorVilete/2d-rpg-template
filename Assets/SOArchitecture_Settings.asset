@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SOArchitecture_Settings
   m_EditorClassIdentifier: 
   _codeGenerationTargetDirectory: Scripts/GameArchitecture
-  _codeGenerationAllowOverwrite: 0
+  _codeGenerationAllowOverwrite: 1
   _defualtCreateAssetMenuOrder: 120
