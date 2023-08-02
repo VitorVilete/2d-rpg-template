@@ -63,7 +63,7 @@ public class GameStateListener : MonoBehaviour
             case "Playing":
                 if (onPlayingState != null) onPlayingState.Invoke();
                 break;
-            case "Pause":
+            case "Paused":
                 if (onPauseState != null) onPauseState.Invoke();
                 break;
             default:
