@@ -470,6 +470,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _showDebugFields
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4827748298209424636}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnLoadingScreenToggled
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneLoaderManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827748298347075755, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4827748298347075765, guid: 5cce551f258bca34c808282f188442c0, type: 3}
       propertyPath: LoadingScreenUI
       value: 
@@ -524,3 +556,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+--- !u!114 &4827748298209424636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4827748298347075765, guid: 5cce551f258bca34c808282f188442c0, type: 3}
+  m_PrefabInstance: {fileID: 4827748298209424635}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7457648864314439d45601e6f4fac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

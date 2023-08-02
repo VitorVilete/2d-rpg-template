@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    public void SetTimeScale(float scale)
+    public void OnSetTimeScale(float scale)
     {
         Time.timeScale = scale;
     }
