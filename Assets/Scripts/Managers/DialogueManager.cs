@@ -21,6 +21,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation(ConversationSO conversation)
     {
+        if (sentences.Count != 0)
+        {
+            return;
+        }
+
         foreach (var sentence in conversation.sentences)
         {
             sentences.Enqueue(sentence);

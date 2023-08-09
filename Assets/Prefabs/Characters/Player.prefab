@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956753549022592283}
   - component: {fileID: 122055293067398036}
+  - component: {fileID: 147363371097264894}
   m_Layer: 8
   m_Name: Interaction
   m_TagString: Player
@@ -58,6 +59,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9385209, y: 0.55221677}
   m_EdgeRadius: 0
+--- !u!114 &147363371097264894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4362251325048436432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a02eeb2db755eb4fa31fef1e2ff4b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTag: Interactable
+  interactionRequestEvent: {fileID: 11400000, guid: 8d0b8a41ead1f0948ad35aa8475d489d, type: 2}
 --- !u!1 &8593003525860493237
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +305,19 @@ MonoBehaviour:
     m_ActionId: 60e200c7-feab-4148-9886-8a7fcb18de21
     m_ActionName: PlayerControls/Movement
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147363371097264894}
+        m_TargetAssemblyTypeName: PlayerInteraction, Assembly-CSharp
+        m_MethodName: EnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: be1dced2-0218-4b99-a582-7ed3bfaacd58
     m_ActionName: PlayerControls/Interact
   m_NeverAutoSwitchControlSchemes: 0
