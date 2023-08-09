@@ -9,13 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 946696189551624051}
+  - component: {fileID: 2911917899032829081}
   m_Layer: 5
   m_Name: DialogueMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &946696189551624051
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38,6 +39,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2911917899032829081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946696189551624050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeb8212fd49ac146bafce69d8bf68ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textSpeed: 0
+  ui: {fileID: 946696189551624050}
+  leftCharacter: {fileID: 2911917899984215966}
+  rightCharacter: {fileID: 2911917899556152756}
+  leftCharacterName: {fileID: 2911917899879142105}
+  leftCharacterPortrait: {fileID: 2911917899592575042}
+  rightCharacterName: {fileID: 2911917898198829640}
+  rightCharacterPortrait: {fileID: 2911917900000776116}
+  dialogueBox: {fileID: 2911917898580395444}
 --- !u!1 &946696190592538662
 GameObject:
   m_ObjectHideFlags: 0

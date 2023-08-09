@@ -8,7 +8,7 @@ namespace ScriptableObjectArchitecture
 
 	[CreateAssetMenu(
 	    fileName = "ConversationSOVariable.asset",
-	    menuName = SOArchitecture_Utility.VARIABLE_SUBMENU + "Conversation",
+	    menuName = SOArchitecture_Utility.VARIABLE_SUBMENU + "Conversation Request",
 	    order = 120)]
 	public class ConversationSOVariable : BaseVariable<ConversationSO, ConversationSOEvent>
 	{

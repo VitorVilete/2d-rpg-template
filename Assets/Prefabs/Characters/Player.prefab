@@ -358,6 +358,7 @@ MonoBehaviour:
   disabledStates:
   - {fileID: 11400000, guid: 9479e7a4236d17a46a47679b14d7cb3f, type: 2}
   - {fileID: 11400000, guid: a8ece9e96bd6c0743be97f2de6fbf1fc, type: 2}
+  - {fileID: 11400000, guid: cf42f5e15d177ac48864d2f86ebcf06b, type: 2}
   onMainMenuState:
     m_PersistentCalls:
       m_Calls: []
@@ -368,6 +369,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onPauseState:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueState:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8593003526247961664
